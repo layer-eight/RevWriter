@@ -1,0 +1,5819 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble, embed[type="application/pdf"] {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}</style><style class="darkreader darkreader--user-agent" media="screen">html {
+    background-color: #181a1b !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #181a1b;
+}
+html, body, input, textarea, select, button {
+    border-color: #575757;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #4c4c4c;
+}
+::placeholder {
+    color: #bab5ab;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #545b00 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #1c1e1f;
+    color: #c5c1b9;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #2f3234;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #383b3e;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #3d4043;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #1c1e1f #2f3234;
+}
+::selection {
+    background-color: #005ccc !important;
+    color: #ffffff !important;
+}
+::-moz-selection {
+    background-color: #005ccc !important;
+    color: #ffffff !important;
+}</style>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+                <title>Aktivitäten - Odoo</title>
+                <link type="image/x-icon" rel="shortcut icon" href="https://erp.brain-child.de/web/static/src/img/favicon.ico">
+
+                <script type="text/javascript">
+                    var odoo = {
+                        csrf_token: "485b3a6f123946414055fe43520fce23ab0ea24ao",
+                    };
+                </script>
+
+                
+                <script type="text/javascript">
+                    odoo.session_info = {"username": "leittenberger", "max_time_between_keys_in_ms": 55, "currencies": {"1": {"digits": [69, 2], "position": "after", "symbol": "\u20ac"}, "3": {"digits": [69, 2], "position": "before", "symbol": "$"}}, "uid": 41, "db": "brainchild", "is_admin": false, "server_version_info": [10, 0, 0, "final", 0, ""], "server_version": "10.0-20190701", "user_context": {"lang": "de_DE", "tz": "Europe/Berlin", "uid": 41}, "web.base.url": "http://erp.brain-child.de", "name": "Lukas Eittenberger", "partner_id": 921, "company_id": 1, "session_id": "7fdf8062026a2ede47a8f3e4a4823234dd6e9cb9", "is_superuser": false, "user_companies": false};
+                </script>
+
+                
+            <link href="Aktivit%C3%A4ten%20-%20Lukas-Dateien/web_002.css" rel="stylesheet"><style class="darkreader darkreader--sync" media="screen"></style>
+                
+            <link href="Aktivit%C3%A4ten%20-%20Lukas-Dateien/web.css" rel="stylesheet"><style class="darkreader darkreader--sync" media="screen"></style>
+            <link href="Aktivit%C3%A4ten%20-%20Lukas-Dateien/web_003.css" rel="stylesheet"><style class="darkreader darkreader--sync" media="screen"></style>
+                
+            <link href="Aktivit%C3%A4ten%20-%20Lukas-Dateien/web_editor.css" rel="stylesheet"><style class="darkreader darkreader--sync" media="screen"></style>
+        
+            <link href="Aktivit%C3%A4ten%20-%20Lukas-Dateien/web_editor_002.css" rel="stylesheet"><style class="darkreader darkreader--sync" media="screen"></style>
+    
+            <script type="text/javascript" src="Aktivit%C3%A4ten%20-%20Lukas-Dateien/web_002.js"></script><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}</style>
+                
+            <script type="text/javascript" src="Aktivit%C3%A4ten%20-%20Lukas-Dateien/web.js"></script>
+
+                
+                    
+            <script type="text/javascript" src="Aktivit%C3%A4ten%20-%20Lukas-Dateien/web_editor_002.js"></script>
+        
+            <script type="text/javascript" src="Aktivit%C3%A4ten%20-%20Lukas-Dateien/web_editor.js"></script>
+    
+        <script type="text/javascript">
+            odoo.define('web.web_client', function (require) {
+                var WebClient = require('web.WebClient');
+                var web_client = new WebClient();
+                $(function() {
+                    web_client.setElement($(document.body));
+                    web_client.start();
+                });
+                return web_client;
+            });
+        </script>
+    
+            
+            <script type="text/javascript" src="Aktivit%C3%A4ten%20-%20Lukas-Dateien/de_DE"></script></head>
+            <body class="o_web_client">
+                
+            
+            
+            
+
+            <nav id="oe_main_menu_navbar" class="navbar navbar-inverse">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    
+        <ul class="nav navbar-nav navbar-left oe_application_menu_placeholder" style="">
+            <li class="" style="display: block;">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=79&amp;action=88" class="oe_menu_leaf" data-menu="79" data-action-model="ir.actions.client" data-action-id="88">
+            <span class="oe_menu_text">
+                Diskussion
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=171&amp;action=248" class="oe_menu_leaf" data-menu="171" data-action-model="ir.actions.act_window" data-action-id="248">
+            <span class="oe_menu_text">
+                Kalender
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=317&amp;action=466" class="oe_menu_leaf" data-menu="317" data-action-model="ir.actions.act_window" data-action-id="466">
+            <span class="oe_menu_text">
+                Notizen
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=380&amp;action=539" class="oe_menu_leaf" data-menu="380" data-action-model="ir.actions.act_window" data-action-id="539">
+            <span class="oe_menu_text">
+                Kontakte
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=154&amp;action=" class="oe_menu_toggler" data-menu="154" data-menu-xmlid="sales_team.menu_base_partner">
+            <span class="oe_menu_text">
+                Verkauf
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=188&amp;action=" class="oe_menu_toggler" data-menu="188" data-menu-xmlid="project.menu_main_pm">
+            <span class="oe_menu_text">
+                Projekt
+            </span>
+        </a>
+    
+            </li><li style="display: block;" class="active">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=296&amp;action=" class="oe_menu_toggler" data-menu="296">
+            <span class="oe_menu_text">
+                Zeiterfassung
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=430&amp;action=" class="oe_menu_toggler" data-menu="430">
+            <span class="oe_menu_text">
+                Umfragen
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=289&amp;action=" class="oe_menu_toggler" data-menu="289">
+            <span class="oe_menu_text">
+                Personal
+            </span>
+        </a>
+    
+            </li><li style="display: block;" class="">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=340&amp;action=" class="oe_menu_toggler" data-menu="340">
+            <span class="oe_menu_text">
+                Anwesenheitszeiten
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=301&amp;action=" class="oe_menu_toggler" data-menu="301">
+            <span class="oe_menu_text">
+                Urlaubsanträge
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=363&amp;action=" class="oe_menu_toggler" data-menu="363" data-menu-xmlid="hr_expense.menu_hr_expense_root">
+            <span class="oe_menu_text">
+                Aufwand
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=404&amp;action=" class="oe_menu_toggler" data-menu="404">
+            <span class="oe_menu_text">
+                Wartung
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=382&amp;action=545" class="oe_menu_leaf" data-menu="382" data-action-model="ir.actions.act_url" data-action-id="545">
+            <span class="oe_menu_text">
+                Webseite
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=1&amp;action=" class="oe_menu_toggler" data-menu="1">
+            <span class="oe_menu_text">
+                Pinnwände
+            </span>
+        </a>
+    
+            </li>
+            <li id="menu_more_container" class="dropdown" style="display: none;">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mehr <b class="caret"></b></a>
+                <ul id="menu_more" class="dropdown-menu"></ul>
+            </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right oe_user_menu_placeholder" style=""><li class="o_user_menu">
+        <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <img class="img-circle oe_topbar_avatar" src="Aktivit%C3%A4ten%20-%20Lukas-Dateien/image.png">
+            <span class="oe_topbar_name">Lukas Eittenberger</span> <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+            <li><a data-menu="documentation" href="#">Dokumentation</a></li>
+            <li><a data-menu="support" href="#">Support</a></li>
+            <li class="divider"></li>
+            <li><a data-menu="settings" href="#">Einstellungen</a></li>
+            <li><a data-menu="account" href="#">Mein Odoo.com Konto</a></li>
+            <li><a data-menu="logout" href="#">Abmeldung</a></li>
+        </ul>
+    </li></ul>
+        <ul class="nav navbar-nav navbar-right oe_systray" style=""><li class="o_planner_systray hidden-xs" style="display: none;">
+            <div class="progress" data-original-title="" title=""><div class="progress-bar"></div></div>
+        </li><li class="o_mail_navbar_item">
+            <a href="#" title="Eingang">
+                <i class="fa fa-at"></i> <span class="o_notification_counter">264</span>
+            </a>
+        </li><li class="o_mail_navbar_item o_no_notification">
+            <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" title="Gespräche">
+                <i class="fa fa-comments"></i> <span class="o_notification_counter">0</span>
+            </a>
+            <ul class="o_mail_navbar_dropdown dropdown-menu" role="menu">
+                <li class="o_mail_navbar_dropdown_top">
+                    <div>
+                        <button class="btn btn-sm o_filter_button o_selected" type="button"> Alle </button>
+                        <button class="btn btn-sm o_filter_button" data-filter="chat" type="button"> Chat </button>
+                        <button class="btn btn-sm o_filter_button" data-filter="channels" type="button"> Kommunikationskanäle </button>
+                    </div>
+                    <button class="btn btn-sm o_new_message" type="button"> Neue Nachricht </button>
+                </li>
+                <li class="o_mail_navbar_dropdown_channels"></li>
+            </ul>
+        </li></ul>
+    
+                </div>
+            </nav>
+            <div class="o_main">
+                <div class="o_sub_menu">
+                    
+        <a class="o_sub_menu_logo" href="https://erp.brain-child.de/web">
+            <span class="oe_logo_edit"></span>
+            <img src="Aktivit%C3%A4ten%20-%20Lukas-Dateien/company_logo.png">
+        </a>
+        <div class="o_sub_menu_content">
+            
+                <div style="display: none;" class="oe_secondary_menu" data-menu-parent="79">
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="171">
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="317">
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="380">
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="154">
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="https://erp.brain-child.de/web#menu_id=168&amp;action=243" class="oe_menu_leaf" data-menu="168" data-action-model="ir.actions.act_window" data-action-id="243">
+            <span class="oe_menu_text">
+                Dashboard
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                        <div class="oe_secondary_menu_section" data-menu-xmlid="sales_team.menu_sales">
+                            Verkauf
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=182&amp;action=270" class="oe_menu_leaf" data-menu="182" data-action-model="ir.actions.act_window" data-action-id="270">
+            <span class="oe_menu_text">
+                Interessenten
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=156&amp;action=55" class="oe_menu_leaf" data-menu="156" data-action-model="ir.actions.act_window" data-action-id="55">
+            <span class="oe_menu_text">
+                Kunden
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=183&amp;action=272" class="oe_menu_leaf" data-menu="183" data-action-model="ir.actions.server" data-action-id="272">
+            <span class="oe_menu_text">
+                Meine Pipeline
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=184&amp;action=274" class="oe_menu_leaf" data-menu="184" data-action-model="ir.actions.act_window" data-action-id="274">
+            <span class="oe_menu_text">
+                Nächste Aktivitäten
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=285&amp;action=407" class="oe_menu_leaf" data-menu="285" data-action-model="ir.actions.act_window" data-action-id="407">
+            <span class="oe_menu_text">
+                Angebote
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=281&amp;action=404" class="oe_menu_leaf" data-menu="281" data-action-model="ir.actions.act_window" data-action-id="404">
+            <span class="oe_menu_text">
+                Verkaufsaufträge
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=270&amp;action=117" class="oe_menu_leaf" data-menu="270" data-action-model="ir.actions.act_window" data-action-id="117">
+            <span class="oe_menu_text">
+                Produkte
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=274&amp;action=113" class="oe_menu_leaf" data-menu="274" data-action-model="ir.actions.act_window" data-action-id="113">
+            <span class="oe_menu_text">
+                Produktvarianten
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Abrechnung
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=283&amp;action=405" class="oe_menu_leaf" data-menu="283" data-action-model="ir.actions.act_window" data-action-id="405">
+            <span class="oe_menu_text">
+                Verkäufe zu Rechnungen
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=284&amp;action=406" class="oe_menu_leaf" data-menu="284" data-action-model="ir.actions.act_window" data-action-id="406">
+            <span class="oe_menu_text">
+                Aufträge für Upselling
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="188">
+                    
+                        <div class="oe_secondary_menu_section" data-menu-xmlid="project.menu_projects">
+                            
+                            
+        
+        <a href="https://erp.brain-child.de/web#menu_id=194&amp;action=291" class="oe_menu_leaf" data-menu="194" data-menu-xmlid="project.menu_projects" data-action-model="ir.actions.act_window" data-action-id="291">
+            <span class="oe_menu_text">
+                Dashboard
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Suchen
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=191&amp;action=293" class="oe_menu_leaf" data-menu="191" data-action-model="ir.actions.act_window" data-action-id="293">
+            <span class="oe_menu_text">
+                Aufgaben
+            </span>
+        
+    <div class="badge pull-right" id="menu_counter">
+        
+         46 
+    </div>
+</a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=316&amp;action=463" class="oe_menu_leaf" data-menu="316" data-action-model="ir.actions.act_window" data-action-id="463">
+            <span class="oe_menu_text">
+                Fälle
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                </div>
+            
+                <div style="display: block;" class="oe_secondary_menu" data-menu-parent="296">
+                    
+                        <div class="oe_secondary_menu_section">
+                            Meine Zeiterfassung
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li class="">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=464&amp;action=646" class="oe_menu_leaf" data-menu="464" data-action-model="ir.actions.server" data-action-id="646">
+            <span class="oe_menu_text">
+                Meine Zeiterfassung
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li class="">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=465&amp;action=647" class="oe_menu_leaf" data-menu="465" data-action-model="ir.actions.act_window" data-action-id="647">
+            <span class="oe_menu_text">
+                Meine Stundenzettel
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li class="active">
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=298&amp;action=429" class="oe_menu_leaf" data-menu="298" data-action-model="ir.actions.act_window" data-action-id="429">
+            <span class="oe_menu_text">
+                Detaillierte Aktivitäten
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="430">
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="https://erp.brain-child.de/web#menu_id=431&amp;action=596" class="oe_menu_leaf" data-menu="431" data-action-model="ir.actions.act_window" data-action-id="596">
+            <span class="oe_menu_text">
+                Umfragen
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="https://erp.brain-child.de/web#menu_id=432&amp;action=594" class="oe_menu_leaf" data-menu="432" data-action-model="ir.actions.act_window" data-action-id="594">
+            <span class="oe_menu_text">
+                Antworten
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="289">
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="https://erp.brain-child.de/web#menu_id=293&amp;action=423" class="oe_menu_leaf" data-menu="293" data-action-model="ir.actions.act_window" data-action-id="423">
+            <span class="oe_menu_text">
+                Personal
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                </div>
+            
+                <div style="display: none;" class="oe_secondary_menu" data-menu-parent="340">
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="https://erp.brain-child.de/web#menu_id=341&amp;action=486" class="oe_menu_leaf" data-menu="341" data-action-model="ir.actions.client" data-action-id="486">
+            <span class="oe_menu_text">
+                Meine Anwesenheit
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="301">
+                    
+                        <div class="oe_secondary_menu_section">
+                            Mein Urlaubskonto
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=308&amp;action=441" class="oe_menu_leaf" data-menu="308" data-action-model="ir.actions.act_window" data-action-id="441">
+            <span class="oe_menu_text">
+                Auswertung Urlaubskonto
+            </span>
+        
+    <div class="badge pull-right" id="menu_counter">
+        
+         20 
+    </div>
+</a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=306&amp;action=437" class="oe_menu_leaf" data-menu="306" data-action-model="ir.actions.act_window" data-action-id="437">
+            <span class="oe_menu_text">
+                Urlaubsantrag
+            </span>
+        
+    <div class="badge pull-right" id="menu_counter">
+        
+         13 
+    </div>
+</a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=307&amp;action=439" class="oe_menu_leaf" data-menu="307" data-action-model="ir.actions.act_window" data-action-id="439">
+            <span class="oe_menu_text">
+                Urlaubsanspruch erfragen
+            </span>
+        
+    <div class="badge pull-right" id="menu_counter">
+        
+         7 
+    </div>
+</a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Feiertage
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=487&amp;action=696" class="oe_menu_leaf" data-menu="487" data-action-model="ir.actions.act_window" data-action-id="696">
+            <span class="oe_menu_text">
+                Feiertage
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="363">
+                    
+                        <div class="oe_secondary_menu_section">
+                            Meine Personalspesen
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=365&amp;action=520" class="oe_menu_leaf" data-menu="365" data-action-model="ir.actions.act_window" data-action-id="520">
+            <span class="oe_menu_text">
+                Spesen für die Einreichung
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=366&amp;action=521" class="oe_menu_leaf" data-menu="366" data-action-model="ir.actions.act_window" data-action-id="521">
+            <span class="oe_menu_text">
+                Abgelehnte Spesen
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=367&amp;action=525" class="oe_menu_leaf" data-menu="367" data-menu-xmlid="hr_expense.menu_hr_expense_sheet_my_reports" data-action-model="ir.actions.act_window" data-action-id="525">
+            <span class="oe_menu_text">
+                Spesenberichte
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="404">
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="https://erp.brain-child.de/web#menu_id=405&amp;action=576" class="oe_menu_leaf" data-menu="405" data-action-model="ir.actions.act_window" data-action-id="576">
+            <span class="oe_menu_text">
+                Dashboard
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Wartung
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=407&amp;action=566" class="oe_menu_leaf" data-menu="407" data-action-model="ir.actions.act_window" data-action-id="566">
+            <span class="oe_menu_text">
+                Wartungsanfragen
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="https://erp.brain-child.de/web#menu_id=408&amp;action=570" class="oe_menu_leaf" data-menu="408" data-action-model="ir.actions.act_window" data-action-id="570">
+            <span class="oe_menu_text">
+                Wartungskalender
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="https://erp.brain-child.de/web#menu_id=409&amp;action=571" class="oe_menu_leaf" data-menu="409" data-action-model="ir.actions.act_window" data-action-id="571">
+            <span class="oe_menu_text">
+                Inventar
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="382">
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="1">
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="https://erp.brain-child.de/web#menu_id=379&amp;action=538" class="oe_menu_leaf" data-menu="379" data-action-model="ir.actions.act_window" data-action-id="538">
+            <span class="oe_menu_text">
+                Mein Dashboard
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                </div>
+            
+        </div>
+        <div class="o_sub_menu_footer">
+            Ein System von <a href="http://www.odoo.com/" target="_blank"><span></span></a>
+        </div>
+    
+                </div>
+                <div class="o_main_content"><div class="o_control_panel">
+        <ol class="breadcrumb"><li class="active">Aktivitäten</li></ol>
+        <div class="o_cp_searchview" style="display: block;"><div class="o_searchview active">
+    <span class="o_searchview_more fa fa-search-plus" title="Erweiterte Suche ..."></span>
+<ul class="dropdown-menu o_searchview_autocomplete" role="menu" style="display: none;"><li class=""><a class="o-expand" href="#"></a><a href="#">Suche <em>Tabelle</em> nach: <strong>lu</strong></a></li><li class="o-selection-focus"><a class="o-expand" href="#"></a><a href="#">Suche <em>Benutzer</em> nach: <strong>lu</strong></a></li><li><a class="o-expand" href="#"></a><a href="#">Suche <em>Projekt</em> nach: <strong>lu</strong></a></li><li><a class="o-expand" href="#"></a><a href="#">Suche <em>Aufgabe</em> nach: <strong>lu</strong></a></li><li><a href="#">Suche <em>Beschreibung</em> nach: <strong>lu</strong></a></li><li><a class="o-expand" href="#"></a><a href="#">Suche <em>Abteilung</em> nach: <strong>lu</strong></a></li></ul><div class="o_searchview_facet" tabindex="0">
+    
+    <span class="o_searchview_facet_label">
+        Benutzer
+    </span>
+    <div class="o_facet_values"><span>
+    lu
+</span></div>
+    <div class="fa fa-sm fa-remove o_facet_remove"></div>
+</div><input class="o_searchview_input" placeholder="Suche ..." type="text"></div></div>
+        <div class="o_cp_left">
+            <div class="o_cp_buttons"><div class="o_list_buttons">
+            
+                <button accesskey="c" class="btn btn-primary btn-sm o_list_button_add" type="button">
+                    Anlegen
+                </button>
+           
+        <button class="btn btn-sm btn-default o_button_import" type="button">
+            Import
+        </button>
+    
+        
+            
+            <button accesskey="s" class="btn btn-primary btn-sm o_list_button_save" type="button">
+                Speichern
+            </button>
+            <button accesskey="j" class="btn btn-default btn-sm o_list_button_discard" type="button">
+                Verwerfen
+            </button>
+        </div></div>
+            <div class="o_cp_sidebar"><div class="btn-group o_hidden">
+    
+        <div class="btn-group o_dropdown">
+            <button class="o_dropdown_toggler_btn btn btn-sm dropdown-toggle" data-toggle="dropdown">
+                
+                Druck <span class="caret"></span>
+            </button>
+            
+            <ul class="dropdown-menu" role="menu">
+                <li>
+                    
+                    <a data-index="0" data-section="print">
+                        Zeitnachweis-Einträge
+                        
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    
+        <div class="btn-group o_dropdown">
+            <button class="o_dropdown_toggler_btn btn btn-sm dropdown-toggle" data-toggle="dropdown">
+                
+                Aktion <span class="caret"></span>
+            </button>
+            
+            <ul class="dropdown-menu" role="menu">
+                <li>
+                    
+                    <a data-index="0" data-section="other">
+                        Export
+                        
+                    </a>
+                </li><li>
+                    
+                    <a data-index="1" data-section="other">
+                        Löschen
+                        
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    
+</div></div>
+        </div>
+        <div class="o_cp_right">
+            <div class="btn-group o_search_options" style="display: none;"><div class="btn-group o_dropdown">
+    <button class="o_dropdown_toggler_btn btn btn-sm dropdown-toggle" data-toggle="dropdown">
+        <span class="fa fa-filter"></span> Filter <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu o_filters_menu" role="menu">
+        <li class="o_add_filter o_closed_menu">
+            <a href="#">Benutzerdefinierten Filter hinzufügen</a>
+        </li>
+        <li class="o_add_filter_menu">
+            <button class="btn btn-primary btn-sm o_apply_filter" type="button">Anwenden</button>
+            <button class="btn btn-default btn-sm o_add_condition" type="button"><span class="fa fa-plus-circle"></span> Eine Bedingung hinzufügen</button>
+        </li>
+    </ul>
+</div><div class="btn-group hidden-xs o_dropdown">
+    <button class="o_dropdown_toggler_btn btn btn-sm dropdown-toggle" data-toggle="dropdown">
+        <span class="fa fa-bars"></span> Gruppiert nach... <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu o_group_by_menu" role="menu">
+        <li data-index="0">
+        <a href="#">Benutzer</a>
+    </li><li data-index="1">
+        <a href="#">Projekt</a>
+    </li><li data-index="2">
+        <a href="#">Aufgabe</a>
+    </li><li data-index="3">
+        <a href="#">Produkt</a>
+    </li><li data-index="4" title="Zeiterfassung nach Monat">
+        <a href="#">monatliche Zeiterfassung</a>
+    </li><li class="divider" style="display: list-item;"></li>
+        <li class="o_add_custom_group o_closed_menu">
+            <a href="#">Benutzerdefinierte Gruppe hinzufügen</a>
+        </li>
+    </ul>
+</div><div class="btn-group o_dropdown">
+    <button class="o_dropdown_toggler_btn btn btn-sm dropdown-toggle" data-toggle="dropdown">
+        <span class="fa fa-star"></span> Favoriten <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu o_favorites_menu" role="menu">
+        <li class="divider"></li>
+        <li class="o_save_search o_closed_menu">
+            <a href="#">Aktuelle Suche speichern</a>
+        </li>
+        <li class="o_save_name">
+            <input type="text" value="Aktivitäten">
+        </li>
+        <li class="o_save_name">
+            <span><div class="o_checkbox"><input type="checkbox"><span></span></div> Als Standard benutzen</span>
+        </li>
+        <li class="o_save_name">
+            <span><div class="o_checkbox"><input type="checkbox"><span></span></div> Mit allen Benutzern teilen </span><span class="fa fa-users"></span>
+        </li>
+        <li class="o_save_name">
+            <button class="btn btn-primary btn-sm" type="button">Speichern</button>
+        </li>
+    
+    <li class="o_add_to_dashboard_link o_closed_menu">
+        <a href="#">Zu meiner Übersicht hinzufügen</a>
+    </li>
+    <li class="o_add_to_dashboard">
+        <input class="o_add_to_dashboard_input" type="text" value="Aktivitäten">
+    </li>
+    <li class="o_add_to_dashboard">
+        <button class="btn btn-primary btn-sm o_add_to_dashboard_button" type="button">Hinzufügen</button>
+    </li>
+</ul>
+</div></div>
+            <div class="o_cp_pager"><div class="">
+    <span class="o_pager_value">1-80</span> / <span class="o_pager_limit">411</span>
+    <span class="btn-group btn-group-sm">
+        
+        
+            
+            
+        
+        <button class="fa fa-chevron-left btn btn-icon o_pager_previous" type="button" accesskey="p"></button>
+        <button class="fa fa-chevron-right btn btn-icon o_pager_next" type="button" accesskey="n"></button>
+    </span>
+</div></div>
+            <div class="btn-group btn-group-sm o_cp_switch_buttons"></div>
+        </div>
+    </div><div class="o_content"><div class="o_view_manager_content"><div class="o_list_editable"><div class="o_form_view o_list_editable_form o_form_nosheet o_hidden">
+    <field name="date" modifiers="{&quot;required&quot;:true}" nolabel="true"></field><field name="user_id" required="1" options="{&quot;no_open&quot;: True}" can_create="false" can_write="false" modifiers="{&quot;required&quot;:true}" nolabel="true"></field><field name="name" modifiers="{&quot;required&quot;:true}" nolabel="true"></field><field name="project_id" required="1" on_change="1" can_create="false" can_write="false" modifiers="{&quot;required&quot;:true}" nolabel="true"></field><field name="task_id" context="{'default_project_id': project_id}" domain="[('project_id', '=', project_id)]" can_create="true" can_write="true" modifiers="{}" nolabel="true"></field><field name="unit_amount" string="Dauer" sum="Gesamtdauer" widget="float_time" on_change="1" modifiers="{}" nolabel="true"></field></div><div class="table-responsive">
+    <table class="o_list_view table table-condensed table-striped">
+        
+        <thead>
+            <tr>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                <th class="o_list_record_selector" width="1">
+                    <div class="o_checkbox">
+                        <input type="checkbox"><span></span>
+                    </div>
+                </th>
+                
+                    <th data-id="date" class="o_column_sortable">
+                        Datum
+                    </th>
+                
+                    <th data-id="user_id" class="o_column_sortable">
+                        Benutzer
+                    </th>
+                
+                    <th data-id="name" class="o_column_sortable">
+                        Beschreibung
+                    </th>
+                
+                    <th data-id="project_id" class="o_column_sortable">
+                        Projekt
+                    </th>
+                
+                    <th data-id="task_id" class="o_column_sortable">
+                        Aufgabe
+                    </th>
+                
+                    <th data-id="unit_amount" class="o_column_sortable">
+                        Dauer
+                    </th>
+                
+                
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>
+                </td><td>
+                </td><td>
+                </td><td>
+                </td><td>
+                </td><td data-field="unit_amount" title="Gesamtdauer" class="o_list_number">182:38</td>
+                
+            </tr>
+        </tfoot>
+    <tbody>
+    <tr data-id="10895" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">08.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:07</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10932" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">08.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Fix Look at Aircraft funcionality</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">01:30</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10933" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">08.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Pair programming with A. Zeissig</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">02:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10934" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">08.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Localiazation for Look From Control</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">02:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10935" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">08.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Exception handling and commenting the code</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">02:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10896" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">05.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">SQL DBMS</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Unterricht Lukas / Hannes</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">07:45</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10869" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">04.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:05</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10884" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">04.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">AMST Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10885" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">04.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Code refactoring and pair programming with A. Zeissig</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">07:45</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10859" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">03.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:08</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10864" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">03.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Disable combo box for subject and target</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">01:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10865" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">03.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Implement quick toggle</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">05:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10866" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">03.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Code refactoring for save and delete methods</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">02:45</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10834" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">02.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Team Besprechung</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10835" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">02.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:10</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10836" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">02.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Connect control with SIG</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">02:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10837" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">02.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Code refactoring</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">02:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10838" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">02.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Disable save button if no camera position selected </td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">01:30</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10839" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">02.06.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Implement quick toggle</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">01:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10777" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">28.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">ASMT Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10791" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">28.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10793" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">28.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Connect control with SIG</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">03:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10794" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">28.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Code refactoring</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">04:30</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10754" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">27.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:10</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10776" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">27.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">AMST Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10789" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">27.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Pair programming and code refactoring with A. Zeissig</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">02:55</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10790" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">27.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Connect control with SIG</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">06:45</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10750" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">26.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Auto generate CameraDefinitionsUserFile </td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:30</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10752" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">26.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:10</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10781" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">26.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Fix save methods</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">06:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10782" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">26.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Implement delete method</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">02:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10711" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">25.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">AMST Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10712" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">25.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:10</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10749" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">25.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Unterstützung K. Wagner beim Beheben von Build Fehler nach SVN Update</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Merge und Build Fehler Untersuchen</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">01:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10751" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">25.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Investigate save methods side effects</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">05:45</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10696" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">20.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:07</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10708" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">20.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Debug Save and Save as methods</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">08:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10709" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">20.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">AMST Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10668" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">19.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:08</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10707" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">19.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Further adjustments of user control</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">07:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10710" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">19.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">AMST Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10667" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">18.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:06</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10695" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">18.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">AMST Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10705" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">18.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Populate Reference ComboBox</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">03:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10706" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">18.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Adjust LookFrom user control</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">04:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10615" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">15.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:05</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10635" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">15.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Aktivitätsdiagramme, SQL Queries</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Unterricht Lukas / Hannes</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">07:50</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10614" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">14.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:06</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10616" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">14.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Populate Camera ComboBox</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">03:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10617" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">14.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">ASMT Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10634" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">14.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Connect Control to SIG</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">04:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10593" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">13.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:07</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10594" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">13.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">AMST Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10633" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">13.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    "> Read and write for CameraDefinitions.xml to save camera settings</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">07:30</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10582" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">12.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">AMST Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10584" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">12.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Code refactoring</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">01:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10585" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">12.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:06</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10586" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">12.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    "> Read and write for CameraDefinitions.xml to save camera settings</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">06:30</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10534" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">11.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:06</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10581" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">11.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">AMST Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10583" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">11.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    "> Read and write for CameraDefinitions.xml to save camera settings</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">07:20</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10540" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">08.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">UML Diagrammtypen; SQL Datenbankdiagramm</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Unterricht Lukas / Hannes</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">07:45</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10449" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">07.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">AMST Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10482" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">07.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:09</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10531" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">07.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">    Read and write for CameraDefinitions.xml to save camera settings</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">07:45</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10448" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">06.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">AMST Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10481" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">06.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:07</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10532" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">06.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Read and write for CameraDefinitions.xml to save camera settings</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">07:45</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10445" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">05.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:08</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10447" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">05.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">AMST Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10483" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">05.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Localization for String </td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-180 4GMP Interface</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:30</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10533" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">05.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Read and write for CameraDefinitions.xml to save camera settings</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">07:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10444" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">04.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:08</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10446" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">04.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">AMST Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10462" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">04.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Implement Control which is shown over the shortcuts view in training view</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">02:30</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10463" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">04.05.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Implement Control which is shown over the shortcuts view in training view</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">05:00</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10379" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">30.04.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">brainchild GmbH</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Daily Stand-Up</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:10</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10406" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">30.04.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">AMST Daily</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">Meetings</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">00:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10409" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">30.04.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Implement Control which is shown over the shortcuts view in training view</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">02:15</td>
+    
+    
+        
+    
+</tr>
+
+    <tr data-id="10410" class="" style="">
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <td class="o_list_record_selector">
+        
+        
+        <div class="o_checkbox">
+            <input name="radiogroup" type="checkbox"><span></span>
+        </div>
+    </td>
+    
+        
+        
+        
+        <td data-field="date" class="    ">30.04.2020</td>
+    
+        
+        
+        
+        <td data-field="user_id" class="    ">Lukas Eittenberger</td>
+    
+        
+        
+        
+        <td data-field="name" class="    ">Implement Control which is shown over the shortcuts view in training view</td>
+    
+        
+        
+        
+        <td data-field="project_id" class="    ">AMST Systemtechnik - Korinna Wagner</td>
+    
+        
+        
+        
+        <td data-field="task_id" class="    ">AMST-183 Implement look from control</td>
+    
+        
+        
+        
+        <td data-field="unit_amount" class=" o_list_number   ">04:30</td>
+    
+    
+        
+    
+</tr>
+</tbody></table>
+</div></div></div></div></div>
+            </div>
+        
+            
+        
+    
+    <div class="o_notification_manager"></div><div class="o_loading" style="display: none;">Wird geladen</div></body></html>

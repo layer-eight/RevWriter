@@ -1,0 +1,10 @@
+C:\Users\PeteFunny\source\repos\RevisionWriter\RevisionWriter\bin\Debug\RevisionWriter.exe.config
+C:\Users\PeteFunny\source\repos\RevisionWriter\RevisionWriter\bin\Debug\RevisionWriter.exe
+C:\Users\PeteFunny\source\repos\RevisionWriter\RevisionWriter\bin\Debug\RevisionWriter.pdb
+C:\Users\PeteFunny\source\repos\RevisionWriter\RevisionWriter\obj\Debug\RevisionWriter.csprojAssemblyReference.cache
+C:\Users\PeteFunny\source\repos\RevisionWriter\RevisionWriter\obj\Debug\RevisionWriter.csproj.CoreCompileInputs.cache
+C:\Users\PeteFunny\source\repos\RevisionWriter\RevisionWriter\obj\Debug\RevisionWriter.exe
+C:\Users\PeteFunny\source\repos\RevisionWriter\RevisionWriter\obj\Debug\RevisionWriter.pdb
+C:\Users\PeteFunny\source\repos\RevisionWriter\RevisionWriter\bin\Debug\itextsharp.dll
+C:\Users\PeteFunny\source\repos\RevisionWriter\RevisionWriter\bin\Debug\itextsharp.xml
+C:\Users\PeteFunny\source\repos\RevisionWriter\RevisionWriter\obj\Debug\RevisionWriter.csproj.CopyComplete
