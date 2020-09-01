@@ -19,10 +19,12 @@ namespace RevisionWriter
             PdfParser pdfReader = new PdfParser();
 
 
-            pdfReader.ParsePdf("wochenbericht_template.pdf");
+            pdfReader.ListFieldNames();
+            pdfReader.fillForm();
 
 
-    
+
+
             Console.WriteLine(scheiss.posoFactory(reg, htmlHannes).ToString());
             Console.WriteLine(scheiss.posoFactory(reg, htmlLukas).ToString()); 
             Console.ReadLine();
