@@ -76,7 +76,7 @@ namespace RevisionWriter
 
           
 
-        public WorkWeek SortTasksByDay (DateTime startDate, ObservableCollection<SingleTask> tasksTotal)
+        public WorkWeek SortTasksByDay (DateTime startDate, ObservableCollection<SingleTask> tasksTotal, int repeat)
         {
             WorkWeek singleWeek = new WorkWeek();
             singleWeek.WeekDayArray[0] = Monday;
@@ -87,17 +87,24 @@ namespace RevisionWriter
  
             var foo = tasksTotal.OrderBy(x => x.Date);
             int i = 0;
-            while (i < 6)
+            int j = 0;
+            while (j <= repeat)
             {
-                foreach (SingleTask task in foo)
+
+                while (i < 6)
                 {
-                    if (task.Date.Equals(startDate))
+                    foreach (SingleTask task in foo)
                     {
-                        singleWeek.WeekDayArray[i].Add(task);
+                        if (task.Date.Equals(startDate))
+                        {
+                            singleWeek.WeekDayArray[i].Add(task);
+                        }
                     }
+                    i++;
+                    startDate = startDate.AddDays(1);
                 }
-                i++;
-                startDate = startDate.AddDays(1);
+                startDate = startDate.AddDays(3);
+                j++;
             }
             return singleWeek;
         }

@@ -34,61 +34,58 @@ namespace RevisionWriter
         }
 
 
-        public void fillForm(WorkWeek scheiss)
+        public void fillForm(WorkWeek scheiss, string department, int nachweisNummer, string jahr, int repeat, string date)
         {
-            string newFile = @"e:\Files\Downloads\wochenbericht_finished.pdf";
-            PdfReader pdfReader = new PdfReader(pdfTemplate);
-            PdfStamper pdfStamper = new PdfStamper(pdfReader, new FileStream(newFile, FileMode.Create));
-            AcroFields pdfFormFields = pdfStamper.AcroFields;
-
-            //Template has Text1-Text25 Fields
-            pdfFormFields.SetField("Text1", "12");
-            pdfFormFields.SetField("Text2", "12");
-            pdfFormFields.SetField("Text3", "12");
-            pdfFormFields.SetField("Text4", "12");
-            pdfFormFields.SetField("Text5", "12");
-            pdfFormFields.SetField("Text6", "12");
-            pdfFormFields.SetField("Text6", "12");
-            //Montag
-            string[] wochentag = new string[5];
-            int i = 0;
-            while (i < 5)
+            DateTime weekcount = Convert.ToDateTime(date);
+            while (repeat >= 0)
             {
-                foreach(WorkWeek.SingleTask singleTask in scheiss.WeekDayArray[i])
+                string newFile = @"e:\Files\Downloads\wochenbericht_"+ nachweisNummer+".pdf";
+                PdfReader pdfReader = new PdfReader(pdfTemplate);
+                PdfStamper pdfStamper = new PdfStamper(pdfReader, new FileStream(newFile, FileMode.Create));
+                AcroFields pdfFormFields = pdfStamper.AcroFields;
+                //Template has Text1-Text25 Fields
+                pdfFormFields.SetField("Text1", "Lukas Eittenberger");
+                pdfFormFields.SetField("Text2", department);
+                pdfFormFields.SetField("Text3", nachweisNummer.ToString());
+                pdfFormFields.SetField("Text4", weekcount.ToString());
+                weekcount = weekcount.AddDays(4);
+                pdfFormFields.SetField("Text5", weekcount.ToString());
+                pdfFormFields.SetField("Text6", jahr);
+                //Montag
+                string[] wochentag = new string[5];
+
+                int i = 0;
+                while (i < 5)
                 {
-                    if (!singleTask.Description.Contains("Daily"))
+                    foreach (WorkWeek.SingleTask singleTask in scheiss.WeekDayArray[i])
                     {
-                        wochentag[i] +=  "["+ singleTask.Description +"] "+ singleTask.Besamung + "\n";
+                        if (!singleTask.Description.Contains("Daily"))
+                        {
+                            wochentag[i] += "[" + singleTask.Description + "] " + singleTask.Besamung + "\n";
+                        }
                     }
+                    i++;
                 }
-                i++;
+                pdfFormFields.SetField("Text7", wochentag[0]);
+
+                pdfFormFields.SetField("Text10", wochentag[1]);
+
+                pdfFormFields.SetField("Text13", wochentag[2]);
+
+                pdfFormFields.SetField("Text16", wochentag[3]);
+
+                pdfFormFields.SetField("Text19", wochentag[4]);
+
+                repeat--;
+                nachweisNummer++;
+                weekcount = weekcount.AddDays(3);
+
+                // flatten the form to remove editting options, set it to false  
+                // to leave the form open to subsequent manual edits  
+                pdfStamper.FormFlattening = false;
+                // close the pdf  
+                pdfStamper.Close();
             }
-            pdfFormFields.SetField("Text7", wochentag[0]);
-            pdfFormFields.SetField("Text8", "12");
-            pdfFormFields.SetField("Text9", "12");
-            pdfFormFields.SetField("Text10", wochentag[1]);
-            pdfFormFields.SetField("Text11", "12");
-            pdfFormFields.SetField("Text12", "12");
-            pdfFormFields.SetField("Text13", wochentag[2]);
-            pdfFormFields.SetField("Text14", "12");
-            pdfFormFields.SetField("Text15", "12");
-            pdfFormFields.SetField("Text16", wochentag[3]);
-            pdfFormFields.SetField("Text17", "12");
-            pdfFormFields.SetField("Text18", "12");
-            pdfFormFields.SetField("Text19", wochentag[4]);
-            pdfFormFields.SetField("Text20", "12");
-            pdfFormFields.SetField("Text21", "12");
-            pdfFormFields.SetField("Text22", "12");
-            pdfFormFields.SetField("Text23", "12");
-            pdfFormFields.SetField("Text24", "12");
-            pdfFormFields.SetField("Text25", "12");
-
-
-            // flatten the form to remove editting options, set it to false  
-            // to leave the form open to subsequent manual edits  
-            pdfStamper.FormFlattening = false;
-            // close the pdf  
-            pdfStamper.Close();
         }
 
         #region Private Member Variables
