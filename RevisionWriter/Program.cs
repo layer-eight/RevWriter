@@ -5,6 +5,7 @@ using System.IO;
 using System.Runtime.Remoting.Messaging;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using static Translator.Translator;
 
 namespace RevisionWriter
 {
@@ -13,15 +14,19 @@ namespace RevisionWriter
         [STAThread]
         static void Main(string[] args)
         {
+            TranslateSample translator = new TranslateSample();
+            translator.TranslateText();
+
             Console.WriteLine("Choose a file to read: ");
             OpenFileDialog fbd = new OpenFileDialog();
             if (fbd.ShowDialog() == DialogResult.OK)
             {
                 //foreach (var path in Directory.GetFiles(fbd.SelectedPath))
                 
-                    Console.WriteLine(Path.GetFileName(fbd.FileName)); // full path
+                Console.WriteLine(Path.GetFileName(fbd.FileName)); // full path
                 
             }
+
 
             Console.WriteLine("Choose start date: dd.mm.yyyy !!!Currently must be a monday!!!");
             Console.Write("Date: ");
@@ -34,9 +39,6 @@ namespace RevisionWriter
             string yearOfEducation = Console.ReadLine();
             Console.WriteLine("How many revisions: ");
             int repeat = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("");
-            Console.ReadLine();
 
 
             string html = File.ReadAllText(fbd.FileName);
