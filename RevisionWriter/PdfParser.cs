@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Translator;
 
 namespace RevisionWriter
 {
@@ -34,37 +35,40 @@ namespace RevisionWriter
         }
 
 
-        public void fillForm(WorkWeek scheiss, string department, int nachweisNummer, string jahr, int repeat, string date)
+        public void fillForm(List<WorkWeek> workWeeks, string department, int nachweisNummer, string jahr)
         {
-            DateTime weekcount = Convert.ToDateTime(date);
-            while (repeat >= 0)
+            Translat0r translator = new Translat0r();
+            int repeat = workWeeks.Count();
+            string name = GetUserName(workWeeks);
+            
+            int weekIndex = 0;
+            while (repeat > 0)
             {
+
                 string newFile = @"e:\Files\Downloads\wochenbericht_"+ nachweisNummer+".pdf";
                 PdfReader pdfReader = new PdfReader(pdfTemplate);
                 PdfStamper pdfStamper = new PdfStamper(pdfReader, new FileStream(newFile, FileMode.Create));
                 AcroFields pdfFormFields = pdfStamper.AcroFields;
                 //Template has Text1-Text25 Fields
-                pdfFormFields.SetField("Text1", "Lukas Eittenberger");
+                pdfFormFields.SetField("Text1", name);
                 pdfFormFields.SetField("Text2", department);
-                pdfFormFields.SetField("Text3", nachweisNummer.ToString());
-                pdfFormFields.SetField("Text4", weekcount.ToString());
-                weekcount = weekcount.AddDays(4);
-                pdfFormFields.SetField("Text5", weekcount.ToString());
+                pdfFormFields.SetField("Text3", nachweisNummer.ToString());                
+                pdfFormFields.SetField("Text4", CalcRevisionStartDate(workWeeks[weekIndex]).ToString());
+                pdfFormFields.SetField("Text5", CalcRevisionStartDate(workWeeks[weekIndex]).AddDays(4).ToString());
                 pdfFormFields.SetField("Text6", jahr);
                 //Montag
                 string[] wochentag = new string[5];
-
-                int i = 0;
-                while (i < 5)
+                int dayOfWeek = 0;
+                while (dayOfWeek < 5)
                 {
-                    foreach (WorkWeek.SingleTask singleTask in scheiss.WeekDayArray[i])
+                    foreach (Task task in workWeeks[weekIndex].WorkDay[dayOfWeek])
                     {
-                        if (!singleTask.Description.Contains("Daily"))
+                        if (!task.Id.Contains("Daily"))
                         {
-                            wochentag[i] += "[" + singleTask.Description + "] " + singleTask.Besamung + "\n";
+                            wochentag[dayOfWeek] += "[" + task.Id + "] " + task.Description + "\n";
                         }
                     }
-                    i++;
+                    dayOfWeek++;
                 }
                 pdfFormFields.SetField("Text7", wochentag[0]);
 
@@ -78,7 +82,7 @@ namespace RevisionWriter
 
                 repeat--;
                 nachweisNummer++;
-                weekcount = weekcount.AddDays(3);
+                weekIndex++;
 
                 // flatten the form to remove editting options, set it to false  
                 // to leave the form open to subsequent manual edits  
@@ -86,6 +90,52 @@ namespace RevisionWriter
                 // close the pdf  
                 pdfStamper.Close();
             }
+        }
+        private DateTime CalcRevisionStartDate(WorkWeek week)
+        {
+            DateTime firstDay = new DateTime();
+            
+            int i = 0;
+            while(firstDay.Equals(new DateTime()))
+            {
+                if (week.WorkDay[i].Count() == 0)
+                    i++;
+                else
+                    firstDay = week.WorkDay[i].First().Date;
+            }
+
+            switch (firstDay.DayOfWeek)
+            {
+                case DayOfWeek.Monday:
+                    break;
+                case DayOfWeek.Tuesday:
+                    firstDay = firstDay.AddDays(-1);
+                    break;
+                case DayOfWeek.Wednesday:
+                    firstDay = firstDay.AddDays(-2);
+                    break;
+                case DayOfWeek.Thursday:
+                    firstDay = firstDay.AddDays(-3);
+                    break;
+                case DayOfWeek.Friday:
+                    firstDay = firstDay.AddDays(-4);
+                    break;
+            }
+            return firstDay;
+        }
+
+        private string GetUserName(List<WorkWeek> workWeeks)
+        {
+            int i = 0;
+            string name = "";
+            while (string.IsNullOrEmpty(name))
+            {
+                if (workWeeks.First().WorkDay[i].Count() == 0)
+                    i++;
+                else
+                    name = workWeeks.First().WorkDay[i].First().User;
+            }
+            return name;
         }
 
         #region Private Member Variables

@@ -10,16 +10,16 @@ using Google.Cloud.Translation.V2;
 
 namespace Translator
 {
-    public class Translator
+    public class Translat0r
     {
 
-        public string TranslateText()
+        public string TranslateText(string input)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             TranslationClient client = TranslationClient.Create();
             var response = client.TranslateText(
-                text: "Hello World.",
-                targetLanguage: "ru",  // Russian
+                text: input,
+                targetLanguage: "de",  // German
                 sourceLanguage: "en");  // English
             Console.WriteLine(response.TranslatedText);
             return response.TranslatedText;
