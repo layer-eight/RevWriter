@@ -19,9 +19,9 @@ namespace RevisionWriter
     {
         public WorkWeek()
         {
-            WorkDay = new ObservableCollection<Task>[5];
+            WorkDayCollection = new ObservableCollection<Task>[5];
         }
-        public ObservableCollection<Task>[] WorkDay = new ObservableCollection<Task>[5];
+        public ObservableCollection<Task>[] WorkDayCollection = new ObservableCollection<Task>[5];
 
         private enum Weekdays
         {
@@ -126,60 +126,64 @@ namespace RevisionWriter
             return CultureInfo.InvariantCulture.Calendar.GetWeekOfYear(time, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday);
         }
 
-        public List<WorkWeek> MakeWorkWeeks(ObservableCollection<Task> tasksTotal)
+        public List<WorkWeek> MakeWorkWeeks(List<Task> tasksTotal)
         {
-            List<Task> sortedTasks = tasksTotal.ToList();
-            sortedTasks.Sort();
+            tasksTotal.Sort();
             List<WorkWeek> weeksTotal = new List<WorkWeek>();
             List<Task> tasksPerWeek = new List<Task>();
             int i = 0;
-            int compareWeek = GetCalenderWeek(sortedTasks.First().Date);
+            int compareWeek = GetCalenderWeek(tasksTotal.First().Date);
             
             while(i < tasksTotal.Count())
             {
-                while(i < tasksTotal.Count() && compareWeek.Equals(GetCalenderWeek(sortedTasks[i].Date)))
+                while(i < tasksTotal.Count() && compareWeek.Equals(GetCalenderWeek(tasksTotal[i].Date)))
                 {
-                    tasksPerWeek.Add(sortedTasks[i]);
+                    tasksPerWeek.Add(tasksTotal[i]);
                     if(i< tasksTotal.Count())
                         i++;
                 }
-                weeksTotal.Add(MakeWorkWeek(tasksPerWeek));
+                weeksTotal.Add(MakeFilledWorkWeek(tasksPerWeek));
                 tasksPerWeek.Clear();
                 if (i < tasksTotal.Count())
-                    compareWeek = GetCalenderWeek(sortedTasks[i].Date);
+                    compareWeek = GetCalenderWeek(tasksTotal[i].Date);
             }
 
             return weeksTotal;
         }
 
-        private WorkWeek MakeWorkWeek(List<Task> sortedTasks)
+        public WorkWeek MakeFilledWorkWeek(List<Task> sortedTasks) => AssignTasksToDayOfWeek(sortedTasks, InitWorkWeek());
+
+
+        private WorkWeek InitWorkWeek()
         {
             WorkWeek week = new WorkWeek();
-            week.WorkDay[(int)Weekdays.Monday] = new ObservableCollection<Task>();
-            week.WorkDay[(int)Weekdays.Tuesday] = new ObservableCollection<Task>();
-            week.WorkDay[(int)Weekdays.Wednesday] = new ObservableCollection<Task>();
-            week.WorkDay[(int)Weekdays.Thursday] = new ObservableCollection<Task>();
-            week.WorkDay[(int)Weekdays.Friday] = new ObservableCollection<Task>();
+            for (int i = (int)Weekdays.Monday; i <= (int)Weekdays.Friday; i++)
+            {
+                week.WorkDayCollection[i] = new ObservableCollection<Task>();
+            }
+            return week;
+        }
 
+        private WorkWeek AssignTasksToDayOfWeek(List<Task> sortedTasks, WorkWeek week)
+        {
             foreach (Task task in sortedTasks)
             {
-
                 switch (task.Date.DayOfWeek)
                 {
                     case DayOfWeek.Monday:
-                        week.WorkDay[(int)Weekdays.Monday].Add(task);
+                        week.WorkDayCollection[(int)Weekdays.Monday].Add(task);
                         break;
                     case DayOfWeek.Tuesday:
-                        week.WorkDay[(int)Weekdays.Tuesday].Add(task);
+                        week.WorkDayCollection[(int)Weekdays.Tuesday].Add(task);
                         break;
                     case DayOfWeek.Wednesday:
-                        week.WorkDay[(int)Weekdays.Wednesday].Add(task);
+                        week.WorkDayCollection[(int)Weekdays.Wednesday].Add(task);
                         break;
                     case DayOfWeek.Thursday:
-                        week.WorkDay[(int)Weekdays.Thursday].Add(task);
+                        week.WorkDayCollection[(int)Weekdays.Thursday].Add(task);
                         break;
                     case DayOfWeek.Friday:
-                        week.WorkDay[(int)Weekdays.Friday].Add(task);
+                        week.WorkDayCollection[(int)Weekdays.Friday].Add(task);
                         break;
                 }
             }

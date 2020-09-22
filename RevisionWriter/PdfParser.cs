@@ -1,12 +1,11 @@
 ﻿using iTextSharp.text.pdf;
-using iTextSharp.text.pdf.parser;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using Translator;
+using static RevisionWriter.Translator;
+
 
 namespace RevisionWriter
 {
@@ -34,10 +33,15 @@ namespace RevisionWriter
             Text = sb.ToString();
         }
 
-
         public void fillForm(List<WorkWeek> workWeeks, string department, int nachweisNummer, string jahr)
         {
-            Translat0r translator = new Translat0r();
+            RestClient rc = new RestClient();
+
+            string input = Console.ReadLine();
+            rc.endPoint = "https://api.deepl.com/v2/translate?text=" + input + "&target_lang=EN&auth_key=f355d8ac-c493-1ae5-b4df-a3b132d1632d";
+            Console.WriteLine(rc.makeRequest());
+            //{"translations":[{"detected_source_language":"DE","text":"{{{ Tree }}"}]}
+
             int repeat = workWeeks.Count();
             string name = GetUserName(workWeeks);
             
@@ -61,7 +65,7 @@ namespace RevisionWriter
                 int dayOfWeek = 0;
                 while (dayOfWeek < 5)
                 {
-                    foreach (Task task in workWeeks[weekIndex].WorkDay[dayOfWeek])
+                    foreach (Task task in workWeeks[weekIndex].WorkDayCollection[dayOfWeek])
                     {
                         if (!task.Id.Contains("Daily"))
                         {
@@ -91,6 +95,7 @@ namespace RevisionWriter
                 pdfStamper.Close();
             }
         }
+        
         private DateTime CalcRevisionStartDate(WorkWeek week)
         {
             DateTime firstDay = new DateTime();
@@ -98,10 +103,10 @@ namespace RevisionWriter
             int i = 0;
             while(firstDay.Equals(new DateTime()))
             {
-                if (week.WorkDay[i].Count() == 0)
+                if (week.WorkDayCollection[i].Count() == 0)
                     i++;
                 else
-                    firstDay = week.WorkDay[i].First().Date;
+                    firstDay = week.WorkDayCollection[i].First().Date;
             }
 
             switch (firstDay.DayOfWeek)
@@ -130,10 +135,10 @@ namespace RevisionWriter
             string name = "";
             while (string.IsNullOrEmpty(name))
             {
-                if (workWeeks.First().WorkDay[i].Count() == 0)
+                if (workWeeks.First().WorkDayCollection[i].Count() == 0)
                     i++;
                 else
-                    name = workWeeks.First().WorkDay[i].First().User;
+                    name = workWeeks.First().WorkDayCollection[i].First().User;
             }
             return name;
         }
