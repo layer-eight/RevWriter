@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RevisionWriter
 {
-    public class Translator
+    public class RESTClient
     {
         public enum httpVerb
         {
@@ -50,10 +50,7 @@ namespace RevisionWriter
                             }
                         }
                     }
-
-
                 }
-
                 return strResponseValue;
             }
         }

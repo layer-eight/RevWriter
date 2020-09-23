@@ -8,7 +8,6 @@ namespace RevisionWriter
 {
     public class Task : IComparable<Task>
     {
-
         public DateTime Date { get; set; }
         public string User { get; set; }
         public string Id { get; set; }

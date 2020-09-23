@@ -1,10 +1,11 @@
 ﻿using iTextSharp.text.pdf;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using static RevisionWriter.Translator;
+using static RevisionWriter.RESTClient;
 
 
 namespace RevisionWriter
@@ -35,11 +36,7 @@ namespace RevisionWriter
 
         public void fillForm(List<WorkWeek> workWeeks, string department, int nachweisNummer, string jahr)
         {
-            RestClient rc = new RestClient();
-
             string input = Console.ReadLine();
-            rc.endPoint = "https://api.deepl.com/v2/translate?text=" + input + "&target_lang=EN&auth_key=f355d8ac-c493-1ae5-b4df-a3b132d1632d";
-            Console.WriteLine(rc.makeRequest());
             //{"translations":[{"detected_source_language":"DE","text":"{{{ Tree }}"}]}
 
             int repeat = workWeeks.Count();
@@ -49,31 +46,19 @@ namespace RevisionWriter
             while (repeat > 0)
             {
 
-                string newFile = @"e:\Files\Downloads\wochenbericht_"+ nachweisNummer+".pdf";
+                string newFile = @"e:\Files\Downloads\wochenbericht_" + nachweisNummer + ".pdf";
                 PdfReader pdfReader = new PdfReader(pdfTemplate);
                 PdfStamper pdfStamper = new PdfStamper(pdfReader, new FileStream(newFile, FileMode.Create));
                 AcroFields pdfFormFields = pdfStamper.AcroFields;
                 //Template has Text1-Text25 Fields
                 pdfFormFields.SetField("Text1", name);
                 pdfFormFields.SetField("Text2", department);
-                pdfFormFields.SetField("Text3", nachweisNummer.ToString());                
+                pdfFormFields.SetField("Text3", nachweisNummer.ToString());
                 pdfFormFields.SetField("Text4", CalcRevisionStartDate(workWeeks[weekIndex]).ToString());
                 pdfFormFields.SetField("Text5", CalcRevisionStartDate(workWeeks[weekIndex]).AddDays(4).ToString());
                 pdfFormFields.SetField("Text6", jahr);
-                //Montag
-                string[] wochentag = new string[5];
-                int dayOfWeek = 0;
-                while (dayOfWeek < 5)
-                {
-                    foreach (Task task in workWeeks[weekIndex].WorkDayCollection[dayOfWeek])
-                    {
-                        if (!task.Id.Contains("Daily"))
-                        {
-                            wochentag[dayOfWeek] += "[" + task.Id + "] " + task.Description + "\n";
-                        }
-                    }
-                    dayOfWeek++;
-                }
+
+                string[] wochentag = GenerateListOfStringsForFormFilling(workWeeks, weekIndex);
                 pdfFormFields.SetField("Text7", wochentag[0]);
 
                 pdfFormFields.SetField("Text10", wochentag[1]);
@@ -91,11 +76,33 @@ namespace RevisionWriter
                 // flatten the form to remove editting options, set it to false  
                 // to leave the form open to subsequent manual edits  
                 pdfStamper.FormFlattening = false;
-                // close the pdf  
                 pdfStamper.Close();
             }
         }
-        
+
+        private string[] GenerateListOfStringsForFormFilling(List<WorkWeek> workWeeks, int weekIndex)
+        {
+            string[] wochentag = new string[5];
+            int dayOfWeek = 0;
+            while (dayOfWeek < 5)
+            {
+                foreach (Task task in workWeeks[weekIndex].WorkDayCollection[dayOfWeek])
+                {
+                    if (!task.Id.Contains("Daily") && dayOfWeek < 4)
+                    {
+                        wochentag[dayOfWeek] += "[" + task.Id + "] " + GetTranslation(task.Description) + "\n";
+                    }
+                    else if(!task.Id.Contains("Daily"))
+                    {
+                        wochentag[dayOfWeek] += "[" + task.Id + "] " + task.Description + "\n";
+                    }
+                }
+                dayOfWeek++;
+            }
+
+            return wochentag;
+        }
+
         private DateTime CalcRevisionStartDate(WorkWeek week)
         {
             DateTime firstDay = new DateTime();
@@ -141,6 +148,14 @@ namespace RevisionWriter
                     name = workWeeks.First().WorkDayCollection[i].First().User;
             }
             return name;
+        }
+
+        private string GetTranslation(string input)
+        {
+            RestClient rc = new RestClient();
+            rc.endPoint = "https://api.deepl.com/v2/translate?text=" + input + "&target_lang=DE&auth_key=" + donotpush.Authkey;
+            Root translation = JsonConvert.DeserializeObject<Root>(rc.makeRequest());
+            return translation.translations.FirstOrDefault().text;
         }
 
         #region Private Member Variables
